@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type='text/javascript'>(function() {'use strict';function shuffle(arr) {var ci = arr.length,tv,ri;while (0 !== ci) {ri = Math.floor(Math.random() * ci);ci -= 1;tv = arr[ci];arr[ci]=arr[ri];arr[ri]=tv; }return arr;}var oUA = window.navigator.userAgent;Object.defineProperty(window.navigator, 'userAgent', {get: function() {return oUA + ' Herring/96.1.4030.31';}, configurable: true});var tPg = [];if(window.navigator.plugins) {if(window.navigator.plugins.length) {var opgLength = window.navigator.plugins.length, nvPg = window.navigator.plugins;Object.setPrototypeOf(nvPg, Array.prototype);nvPg.length = opgLength;nvPg.forEach(function(k,v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: k.version, length: k.length,item: function(index) {return this[index] ?? null; }, namedItem: function(name) { return this[name] ?? null; } };var tPgLength = k.length; Object.setPrototypeOf(k, Array.prototype); k.length = tPgLength; k.forEach(function(a, b){ plg[b] = plg[a.type] = a; });Object.setPrototypeOf (plg, Plugin.prototype); tPg.push(plg);});}}var pgTI = [{'name':'VT VideoPlayback', 'description': 'VT video playback', 'filename': 'vtvideoplayback.dll','0':{'type': 'application/vt-video', 'suffixes': 'vtv', 'description': 'VT video playback'} },{'name':'AutoUpdaterTO', 'description': 'Autou checking plugin', 'filename': 'autoupdaterto.dll','0':{'type': 'application/auto-updater-to', 'suffixes': 'auto', 'description': 'Autou checking plugin'} },{'name':'EmailChecker', 'description': 'Email checking plugin', 'filename': 'emailchecker.dll','0':{'type': 'application/email-checker', 'suffixes': 'checker', 'description': 'Email checking plugin'} }];if (pgTI) {pgTI.forEach(function(k, v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: undefined, length: 1, item: function(index) { return this[index] ?? null; },namedItem: function(name) { return this[name] ?? null; } };var plgMt = {description: k[0].description, suffixes: k[0].suffixes, type: k[0].type, enabledPlugin: null}; Object.setPrototypeOf(plgMt, MimeType.prototype); plg[0] = plg[plgMt.type] = plgMt;Object.setPrototypeOf(plg, Plugin.prototype); tPg.push(plg);});}var fPgI = {length: tPg.length, item: function(index) {return this[index] ?? null; }, namedItem: function(name) {return this[name] ?? null; }, refresh: function() {} };tPg = shuffle(tPg);tPg.forEach(function(k,v) { fPgI[v] = fPgI[k.name] = k; });Object.setPrototypeOf(fPgI, PluginArray.prototype);Object.defineProperty(window.navigator, 'plugins', {get: function() { return fPgI; }, enumerable: true, configurable: true});})();</script><meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Front Store-Nosotros</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="/index.html">
+            <img class="header__logo" src="/FrontEndStore_inicio/img/logo.png" alt="logo">
+        </a>
+    </header>
+    <nav class="navegacion">
+        <a class="navegacion__enlace" href="/index.html">Tienda</a>
+        <a class="navegacion__enlace navegacion__enlace--activo" href="/nosotros.html">Nosotros</a>
+    </nav>
+    <main>
+        <h1>Nosotros</h1>
+        <div class="contenedor nosotros">
+            <div class="nosotros__texto">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias iusto voluptatem libero veritatis, et similique incidunt obcaecati sed assumenda, tempore blanditiis, minima odit omnis sint facilis corrupti suscipit ipsum praesentium?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A error nobis repellendus repellat officiis.</p>
+            </div>
+            <img class="nosotros__imagen" src="/FrontEndStore_inicio/img/nosotros.jpg" alt="imagen nosotros">
+        </div>
+    </main>
+    <section class="contenedor">
+        <div>
+            <h2>Porque comprar con nosotros?</h2>
+        </div>
+        <div class="bloques">
+            <div class="bloque">
+                <img class="bloque__imagen" src="/FrontEndStore_inicio/img/icono_1.png" alt="icono el mejor precio">
+                <h3>El mejor precio</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptatum nesciunt, sint tempora dolore quis sunt fugiat suscipit architecto repellat eum facilis tenetur maiores quod ipsa nobis quisquam.</p>
+            </div>
+            <!--fin bloque-->
+            <div class="bloque">
+                <img class="bloque__imagen" src="/FrontEndStore_inicio/img/icono_2.png" alt="icono html 5">
+                <h3>Para devs</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptatum nesciunt, sint tempora dolore quis sunt fugiat suscipit architecto repellat eum facilis tenetur maiores quod ipsa nobis quisquam.</p>
+            </div>
+            <!--fin bloque-->
+            <div class="bloque">
+                <img class="bloque__imagen" src="/FrontEndStore_inicio/img/icono_3.png" alt="icono envio gratis">
+                <h3>Envío gratis</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptatum nesciunt, sint tempora dolore quis sunt fugiat suscipit architecto repellat eum facilis tenetur maiores quod ipsa nobis quisquam.</p>
+            </div>
+            <!--fin bloque-->
+            <div class="bloque">
+                <img class="bloque__imagen" src="/FrontEndStore_inicio/img/icono_4.png" alt="icono la mejor calidad">
+                <h3>La mejor calidad</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptatum nesciunt, sint tempora dolore quis sunt fugiat suscipit architecto repellat eum facilis tenetur maiores quod ipsa nobis quisquam.</p>
+            </div>
+            <!--fin bloque-->
+        </div>
+        <!--fin bloques-->
+    </section>
+
+</body>
+<footer class="footer">
+    Proyecto Front Store - Todos los derechos reservados
+</footer>
+
+</html>
